@@ -76,7 +76,7 @@ func laLiga() {
 	})
 
 	if err := c.Visit("https://www.terra.com.br/esportes/futebol/internacional/espanha/campeonato-espanhol/tabela/"); err != nil {
-		utils.UnCache("https://www.terra.com.br/esportes/futebol/brasileiro-serie-a/tabela/")
+		utils.UnCache("https://www.terra.com.br/esportes/futebol/internacional/espanha/campeonato-espanhol/tabela/")
 		log.Fatal(err)
 	}
 

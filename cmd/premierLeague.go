@@ -73,7 +73,7 @@ func premierLeague() {
 	})
 
 	if err := c.Visit("https://www.terra.com.br/esportes/futebol/internacional/inglaterra/campeonato-ingles/tabela/"); err != nil {
-		utils.UnCache("https://www.terra.com.br/esportes/futebol/brasileiro-serie-a/tabela/")
+		utils.UnCache("https://www.terra.com.br/esportes/futebol/internacional/inglaterra/campeonato-ingles/tabela/")
 		log.Fatal(err)
 	}
 
