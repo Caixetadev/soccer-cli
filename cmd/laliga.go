@@ -8,6 +8,7 @@ import (
 	"log"
 
 	"github.com/Caixetadev/soccer-cli/config"
+	"github.com/Caixetadev/soccer-cli/utils"
 	"github.com/fatih/color"
 	"github.com/gocolly/colly/v2"
 	"github.com/spf13/cobra"
@@ -75,6 +76,7 @@ func laLiga() {
 	})
 
 	if err := c.Visit("https://www.terra.com.br/esportes/futebol/internacional/espanha/campeonato-espanhol/tabela/"); err != nil {
+		utils.UnCache("https://www.terra.com.br/esportes/futebol/brasileiro-serie-a/tabela/")
 		log.Fatal(err)
 	}
 
