@@ -14,9 +14,9 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// laligaCmd represents the laliga command
-var laligaCmd = &cobra.Command{
-	Use:   "laliga",
+// laLigaCmd represents the laLiga command
+var laLigaCmd = &cobra.Command{
+	Use:   "laLiga",
 	Short: "A brief description of your command",
 	Long: `A longer description that spans multiple lines and likely contains examples
 and usage of using your command. For example:
@@ -30,7 +30,7 @@ to quickly create a Cobra application.`,
 }
 
 func init() {
-	rootCmd.AddCommand(laligaCmd)
+	rootCmd.AddCommand(laLigaCmd)
 
 	// Here you will define your flags and configuration settings.
 
