@@ -12,11 +12,6 @@ import (
 	"github.com/spf13/cobra"
 )
 
-type Seila struct {
-	TeamHome string
-	TeamAway string
-}
-
 // championsLeagueCmd represents the championsLeague command
 var championsLeagueCmd = &cobra.Command{
 	Use:   "championsLeague",
