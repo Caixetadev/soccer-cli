@@ -8,7 +8,6 @@ import (
 	"log"
 
 	"github.com/Caixetadev/soccer-cli/config"
-	"github.com/Caixetadev/soccer-cli/utils"
 	"github.com/gocolly/colly/v2"
 	"github.com/spf13/cobra"
 )
@@ -77,7 +76,6 @@ func championsLeague() {
 	})
 
 	if err := c.Visit("https://www.terra.com.br/esportes/futebol/internacional/liga-dos-campeoes/tabela/"); err != nil {
-		utils.UnCache("https://www.terra.com.br/esportes/futebol/internacional/liga-dos-campeoes/tabela/")
 		log.Fatal(err)
 	}
 
